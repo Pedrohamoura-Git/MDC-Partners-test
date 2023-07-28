@@ -1,0 +1,6 @@
+:root {
+  --main-bg: hsl(210, 46%, 95%);
+  --first-card-bg: hsl(263, 55%, 52%);
+  --second-card-bg: hsl(217, 19%, 35%);
+  --third-card-bg: hsl(0, 0%, 100%);
+}
