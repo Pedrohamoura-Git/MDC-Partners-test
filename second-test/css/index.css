@@ -43,3 +43,13 @@ header {
 #third-card {
   background: white;
 }
+
+.card {
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem -5px black;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  transition: 0.5s;
+  height: 200px;
+  width: 100%;
+}
