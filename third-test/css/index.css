@@ -42,3 +42,31 @@
   background-color: var(--primary-color-accent-hover);
   cursor: pointer;
 }
+
+.content {
+  background-color: var(--bg-color-secondary);
+  border-radius: var(--border-radius-md);
+  margin-top: 1.5rem;
+  width: 370px;
+  padding: 1.5rem;
+}
+
+.user-profile-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.user-img {
+  width: 70px;
+  height: 70px;
+}
+
+.user-username {
+  color: var(--primary-color-accent);
+}
+
+.user-creation-date-wrapper {
+  margin-top: 5px;
+  text-transform: capitalize;
+}
