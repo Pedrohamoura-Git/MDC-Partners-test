@@ -25,9 +25,15 @@ body {
 }
 
 main {
+  height: 100vh;
+}
+
+.wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 100vh;
+  margin-top: 5rem;
+}
+
 }
