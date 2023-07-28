@@ -14,3 +14,17 @@ body {
   font-family: "Kumbh Sans", sans-serif;
   height: 100vh;
 }
+
+main {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 10px 10px 21px rgba(0, 0, 0, 0.4);
+  margin: 21vh auto;
+  padding: 2rem;
+  position: relative;
+  width: min(400px, 80%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
