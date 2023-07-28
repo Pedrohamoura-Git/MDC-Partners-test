@@ -18,3 +18,8 @@ main {
   flex-direction: column;
   height: 100vh;
 }
+
+header {
+  margin-bottom: 4rem;
+}
+
