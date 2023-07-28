@@ -34,7 +34,9 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin: 0 auto;
   margin-top: 5rem;
+  width: clamp(400px, 90%, 700px);
 }
 
 h1 {
