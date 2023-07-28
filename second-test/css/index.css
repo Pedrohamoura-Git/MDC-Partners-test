@@ -23,3 +23,9 @@ header {
   margin-bottom: 4rem;
 }
 
+#cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  column-gap: 2.1rem;
+  width: clamp(200px, 90%, 1280px);
+}
