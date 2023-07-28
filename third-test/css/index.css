@@ -46,6 +46,10 @@
 .content {
   background-color: var(--bg-color-secondary);
   border-radius: var(--border-radius-md);
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-direction: column;
   margin-top: 1.5rem;
   width: 370px;
   padding: 1.5rem;
