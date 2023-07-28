@@ -5,3 +5,12 @@
   --very-dark-grayish-blue: hsl(237, 12%, 33%);
 }
 
+body {
+  background: linear-gradient(to bottom, var(--soft-violet), var(--soft-blue))
+    no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  color: var(--very-dark-desaturated-blue);
+  font-family: "Kumbh Sans", sans-serif;
+  height: 100vh;
+}
