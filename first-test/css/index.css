@@ -42,11 +42,12 @@ h1 {
 }
 
 .submit-btn {
-  border: 0;
   border-radius: 10px;
   padding: 10px;
 }
 
 .submit-btn:hover {
+  outline: 2px solid var(---very-dark-grayish-blue);
+  background-color: var(--card-bg-color);
   cursor: pointer;
 }
