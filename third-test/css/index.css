@@ -1,47 +1,4 @@
-@import "../../global/css/index.css";
-
-:root {
-  --bg-color-primary: hsl(220, 40%, 13%);
-  --bg-color-secondary: hsl(222.44, 40.59%, 19.8%);
-  --txt-color-primary: hsl(0, 0%, 100%);
-  --txt-color-secondary: hsl(350, 4.62%, 74.51%);
-  --txt-color-error: hsl(0, 91.71%, 62.16%);
-  --primary-color-accent: hsl(211.53, 100%, 50%);
-  --primary-color-accent-hover: hsl(212, 98%, 38%);
-}
-
-* {
-  transition: all 0.2s ease-in-out;
-  font-family: "Space Mono", monospace;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background: var(--bg-color-primary);
-  color: var(--txt-color-primary);
-}
-
-main {
-  height: 100vh;
-}
-
-.wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin: 0 auto;
-  margin-top: 5rem;
-  width: clamp(400px, 90%, 700px);
-}
-
-h1 {
-  font-size: 25px;
-}
+@import "./base.css";
 
 .search-form {
   background-color: var(--bg-color-secondary);
