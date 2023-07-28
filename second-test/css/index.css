@@ -1,34 +1,4 @@
-@import "../../global/css/index.css";
-
-:root {
-  --main-bg: hsl(210, 46%, 95%);
-  --first-card-bg: hsl(263, 55%, 52%);
-  --second-card-bg: hsl(217, 19%, 35%);
-  --third-card-bg: hsl(0, 0%, 100%);
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background: var(--main-bg);
-  font-family: "Kumbh Sans", sans-serif;
-}
-
-main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 100vh;
-}
-
-header {
-  margin-bottom: 4rem;
-}
+@import "./base.css";
 
 #cards-wrapper {
   display: grid;
