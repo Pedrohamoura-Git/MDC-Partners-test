@@ -70,3 +70,8 @@
   margin-top: 5px;
   text-transform: capitalize;
 }
+
+.bio-info {
+  font-size: var(--h3-size);
+  margin-bottom: 0.3rem;
+}
