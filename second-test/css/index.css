@@ -1,0 +1,20 @@
+@import "../../global/css/index.css";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: hsl(210, 46%, 95%);
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
