@@ -39,3 +39,46 @@ main {
 h1 {
   font-size: 25px;
 }
+
+.search-form {
+  background-color: var(--bg-color-secondary);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 37px;
+  padding: 7px 10px;
+  width: 370px;
+}
+
+.search-icon {
+  height: 20px;
+  width: 20px;
+}
+
+.search-input {
+  background: transparent;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  margin: 0 10px;
+  padding: 10px;
+  height: 35px;
+  width: 100%;
+}
+
+.search-btn {
+  background-color: var(--primary-color-accent);
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  height: 40px;
+  padding: 10px;
+  outline: none;
+  text-transform: capitalize;
+}
+
+.search-btn:hover {
+  background-color: var(--primary-color-accent-hover);
+  cursor: pointer;
+}
