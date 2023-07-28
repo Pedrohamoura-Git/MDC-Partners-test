@@ -51,7 +51,7 @@
   padding: 1.5rem;
 }
 
-.user-profile-wrapper {
+.profile-wrapper {
   display: flex;
   align-items: center;
   gap: 1.5rem;
@@ -62,11 +62,11 @@
   height: 70px;
 }
 
-.user-username {
+.username {
   color: var(--primary-color-accent);
 }
 
-.user-creation-date-wrapper {
+.creation-date-wrapper {
   margin-top: 5px;
   text-transform: capitalize;
 }
