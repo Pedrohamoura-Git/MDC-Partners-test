@@ -29,3 +29,17 @@ header {
   column-gap: 2.1rem;
   width: clamp(200px, 90%, 1280px);
 }
+
+#first-card {
+  background-repeat: no-repeat;
+  background-position-x: 85%;
+  background-color: hsl(263, 55%, 52%);
+}
+
+#second-card {
+  background: hsl(217, 19%, 35%);
+}
+
+#third-card {
+  background: white;
+}
