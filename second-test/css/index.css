@@ -1,5 +1,12 @@
 @import "../../global/css/index.css";
 
+:root {
+  --main-bg: hsl(210, 46%, 95%);
+  --first-card-bg: hsl(263, 55%, 52%);
+  --second-card-bg: hsl(217, 19%, 35%);
+  --third-card-bg: hsl(0, 0%, 100%);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,7 +14,7 @@
 }
 
 body {
-  background: hsl(210, 46%, 95%);
+  background: var(--main-bg);
   font-family: "Kumbh Sans", sans-serif;
 }
 
@@ -33,15 +40,15 @@ header {
 #first-card {
   background-repeat: no-repeat;
   background-position-x: 85%;
-  background-color: hsl(263, 55%, 52%);
+  background-color: var(--first-card-bg);
 }
 
 #second-card {
-  background: hsl(217, 19%, 35%);
+  background: var(--second-card-bg);
 }
 
 #third-card {
-  background: white;
+  background: var(--third-card-bg);
 }
 
 .card {
