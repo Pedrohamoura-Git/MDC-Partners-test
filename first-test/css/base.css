@@ -1,0 +1,30 @@
+@import "../../global/css/index.css";
+@import "./variables.css";
+
+body {
+  background: linear-gradient(to bottom, var(--soft-violet), var(--soft-blue))
+    no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  color: var(--very-dark-desaturated-blue);
+  font-family: "Kumbh Sans", sans-serif;
+  height: 100vh;
+}
+
+main {
+  background: var(--card-bg-color);
+  border-radius: 1rem;
+  box-shadow: 10px 10px 21px var(--card-box-shadow-color);
+  margin: 21vh auto;
+  padding: 2rem;
+  position: relative;
+  width: min(400px, 80%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
