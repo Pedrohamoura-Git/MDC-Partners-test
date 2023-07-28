@@ -2,7 +2,7 @@
 
 .search-form {
   background-color: var(--bg-color-secondary);
-  border-radius: 10px;
+  border-radius: var(--border-radius-md);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -30,7 +30,7 @@
 .search-btn {
   background-color: var(--primary-color-accent);
   border: none;
-  border-radius: 5px;
+  border-radius: var(--border-radius-sm);
   font-weight: 700;
   height: 40px;
   padding: 10px;
