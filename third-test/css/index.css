@@ -116,3 +116,12 @@
   width: 14px;
   margin: 0 3px;
 }
+
+.contact-link {
+  color: var(--secondary-color-accent);
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
