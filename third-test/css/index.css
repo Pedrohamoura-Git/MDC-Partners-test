@@ -135,3 +135,26 @@
   pointer-events: none;
   color: var(--primary-color-disabled);
 }
+
+@media (min-width: 620px) {
+  .profile {
+    height: 100%;
+  }
+
+  .user-img {
+    height: 120px;
+    width: 120px;
+    margin-bottom: 0.5rem;
+    margin-right: 2rem;
+  }
+
+  .fullname {
+    font-size: var(--h1-size);
+    margin-bottom: 0.5rem;
+  }
+
+  .username {
+    font-size: var(--h2-size);
+    margin-bottom: 0.5rem;
+  }
+}
