@@ -76,7 +76,7 @@
 }
 
 .bio-info {
-  font-size: var(--h3-size);
+  font-size: var(--font-size-sm);
   margin-bottom: 0.3rem;
 }
 
@@ -149,12 +149,12 @@
   }
 
   .fullname {
-    font-size: var(--h1-size);
+    font-size: var(--font-size-lg);
     margin-bottom: 0.5rem;
   }
 
   .username {
-    font-size: var(--h2-size);
+    font-size: var(--font-size-md);
     margin-bottom: 0.5rem;
   }
 }
@@ -193,7 +193,7 @@
   }
 
   .creation-date-wrapper {
-    font-size: var(--h2-size);
+    font-size: var(--font-size-md);
     grid-column: 2;
     padding-top: 3px;
   }

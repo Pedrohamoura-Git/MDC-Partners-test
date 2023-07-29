@@ -32,17 +32,17 @@ main {
 }
 
 h1 {
-  font-size: var(--h1-size);
+  font-size: var(--font-size-lg);
 }
 
 h2 {
-  font-size: var(--h2-size);
+  font-size: var(--font-size-md);
 }
 
 h3 {
-  font-size: var(--h3-size);
+  font-size: var(--font-size-sm);
 }
 
 h4 {
-  font-size: var(--h4-size);
+  font-size: var(--font-size-xsm);
 }
