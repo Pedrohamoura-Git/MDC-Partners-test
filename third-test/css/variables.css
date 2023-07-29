@@ -7,6 +7,7 @@
   --primary-color-accent: hsl(211.53, 100%, 50%);
   --primary-color-accent-hover: hsl(212, 98%, 38%);
   --secondary-color-accent: hsl(189, 100%, 64%);
+  --primary-color-disabled: hsl(212, 14%, 40%);
 
   --h1-size: 25px;
   --h2-size: 16px;

@@ -125,3 +125,7 @@
   text-decoration: underline;
 }
 
+.disabled {
+  pointer-events: none;
+  color: var(--primary-color-disabled);
+}
