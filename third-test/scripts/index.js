@@ -3,6 +3,13 @@ const usernameInput = document.querySelector("#search-input");
 const searchBtn = document.querySelector("#search-btn");
 
 addEventListenerToSearchBtn();
+populateDomWithDefaultData();
+
+function populateDomWithDefaultData() {
+  document.addEventListener("DOMContentLoaded", () => {
+    fetchUser("pedrohamoura-git");
+  });
+}
 
 function addEventListenerToSearchBtn() {
   searchBtn.addEventListener("click", async (e) => {
