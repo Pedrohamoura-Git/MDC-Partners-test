@@ -44,6 +44,11 @@
   width: 100%;
 }
 
+.input:focus {
+  outline: none;
+}
+
+
 #form-actions {
   display: flex;
   align-items: center;
