@@ -26,6 +26,7 @@ function applyUserInfo(user) {
   updateProfileSection(user);
   updateBioSection(user);
   updateActivitySection(user);
+  updateContactSection(user);
 }
 
 function updateProfileSection(data) {
@@ -62,6 +63,29 @@ function updateActivitySection(data) {
   followingQuant.innerHTML = following;
 }
 
+function updateContactSection(data) {
+  const { location, twitter_username, blog, company } = data;
+  const locationName = document.querySelector("#location-name");
+  const twitter = document.querySelector("#twitter-link");
+  const personalSite = document.querySelector("#personal-site");
+  const companyName = document.querySelector("#company");
+
+  locationName.innerHTML = location;
+  removeElementDisabledClass(location);
+
+  twitter.href = `https://twitter.com/${twitter_username}`;
+  twitter.innerHTML = `@${twitter_username}`;
+  removeElementDisabledClass(twitter);
+
+  personalSite.href = blog;
+  personalSite.innerHTML = blog;
+  removeElementDisabledClass(personalSite);
+
+  companyName.href = blog;
+  companyName.innerHTML = company;
+  removeElementDisabledClass(company);
+}
+
 function getFormattedDate(date) {
   const parsedDate = new Date(date);
 
@@ -70,4 +94,8 @@ function getFormattedDate(date) {
     month: "short",
     year: "numeric",
   });
+}
+
+function removeElementDisabledClass(el) {
+  el.classList.remove("disabled");
 }
