@@ -21,8 +21,10 @@ async function fetchUser(usernameValue) {
     console.error(err);
   }
 }
+
 function applyUserInfo(user) {
   updateProfileSection(user);
+  updateBioSection(user);
 }
 
 function updateProfileSection(data) {
@@ -41,6 +43,12 @@ function updateProfileSection(data) {
   creationDate.innerHTML = getFormattedDate(created_at);
 }
 
+function updateBioSection(data) {
+  const { bio } = data;
+  const bioInfo = document.querySelector("#bio-info");
+
+  bioInfo.innerHTML = bio;
+}
 
 function getFormattedDate(date) {
   const parsedDate = new Date(date);
