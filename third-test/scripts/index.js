@@ -21,3 +21,33 @@ async function fetchUser(usernameValue) {
     console.error(err);
   }
 }
+function applyUserInfo(user) {
+  updateProfileSection(user);
+}
+
+function updateProfileSection(data) {
+  const { avatar_url, name, html_url, login, created_at } = data;
+  const externalUserImg = document.querySelector("#external-user-img");
+  const internalUserImg = document.querySelector("#internal-user-img");
+  const fullName = document.querySelector("#fullname");
+  const username = document.querySelector("#username");
+  const creationDate = document.querySelector("#creation-date");
+
+  externalUserImg.src = avatar_url;
+  internalUserImg.src = avatar_url;
+  fullName.innerHTML = name;
+  username.href = html_url;
+  username.innerHTML = `@${login}`;
+  creationDate.innerHTML = getFormattedDate(created_at);
+}
+
+
+function getFormattedDate(date) {
+  const parsedDate = new Date(date);
+
+  return parsedDate.toLocaleDateString("en-GB", {
+    day: "numeric",
+    month: "short",
+    year: "numeric",
+  });
+}
