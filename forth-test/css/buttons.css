@@ -1,0 +1,39 @@
+.btn {
+  border: none;
+  border-radius: calc(10px / 2);
+  padding: 7px 12px;
+  transition: 0.3s;
+  width: max-content;
+  text-align: center;
+  text-transform: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+  transition: var(--transition-time-quick);
+}
+
+.btn-add {
+  background-color: var(--bg-color-primary-accent);
+  color: var(--txt-color-primary);
+  font-size: 14px;
+  font-weight: 600;
+  margin: 10px auto;
+  width: 60%;
+}
+
+.btn-add:hover {
+  background-color: var(--bg-color-primary-accent-hover);
+}
+
+.btn-clear {
+  background-color: var(--bg-color-secondary-accent);
+  color: black;
+  font-weight: 600;
+  height: 31px;
+  padding: 5px 15px;
+}
+
+.btn-clear:hover {
+  background-color: var(--bg-color-secondary-accent-hover);
+}

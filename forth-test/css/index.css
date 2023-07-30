@@ -1,4 +1,5 @@
 @import "./base.css";
+@import "./buttons.css";
 
 #form {
   box-shadow: var(--box-shadow);
@@ -44,3 +45,7 @@
   width: 100%;
 }
 
+#form-actions {
+  display: flex;
+  align-items: center;
+}

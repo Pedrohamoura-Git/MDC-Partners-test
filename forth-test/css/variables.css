@@ -2,8 +2,14 @@
   --bg-color-primary-initial: hsl(178, 37%, 46%);
   --bg-color-primary-final: hsl(276, 49%, 34%);
   --bg-color-secondary: hsla(0, 0%, 100%, 0.7);
+  --bg-color-primary-accent: hsl(185, 34%, 45%);
+  --bg-color-primary-accent-hover: hsl(158, 100%, 42%);
+  --bg-color-secondary-accent: hsla(0, 0%, 100%, 0.7);
+  --bg-color-secondary-accent-hover: hsla(0, 0%, 100%, 1);
   --txt-color-primary: hsl(0, 0%, 100%);
-  --box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  --box-shadow: 0 0 20px hsla(0, 0%, 0%, 0.15);
+  --transition-time-quick: 0.3s;
+
 
   --font-size-lg: 25px;
   --main-wrapper: clamp(210px, 90%, 800px);
