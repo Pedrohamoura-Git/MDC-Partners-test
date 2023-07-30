@@ -48,6 +48,9 @@
   outline: none;
 }
 
+#message-input {
+  min-height: 100px;
+}
 
 #form-actions {
   display: flex;
