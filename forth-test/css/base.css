@@ -35,3 +35,7 @@ main {
   position: relative;
   width: var(--main-wrapper);
 }
+
+h1 {
+  font-size: var(--font-size-lg);
+}

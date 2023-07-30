@@ -3,5 +3,8 @@
   --bg-color-primary-final: hsl(276, 49%, 34%);
   --bg-color-secondary: hsla(0, 0%, 100%, 0.7);
   --txt-color-primary: hsl(0, 0%, 100%);
+  --box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+  --font-size-lg: 25px;
   --main-wrapper: clamp(210px, 90%, 800px);
 }
