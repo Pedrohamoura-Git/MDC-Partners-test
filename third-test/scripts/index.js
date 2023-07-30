@@ -19,12 +19,27 @@ async function fetchUser(usernameValue) {
 
     if (!resp.ok) {
       console.error(resp);
+      return showErrorMessage();
     }
 
     applyUserInfo(parsedResp);
   } catch (err) {
     console.error(err);
+    return showErrorMessage();
   }
+}
+
+function showErrorMessage(
+  msg = "Unable to fetch data. Please, check the username and try again."
+) {
+  const errorWrapper = document.querySelector("#error-wrapper");
+  const errorMsg = document.querySelector("#error-msg");
+  errorMsg.innerHTML = msg;
+
+  errorWrapper.setAttribute("class", "scale-in");
+  setTimeout(() => {
+    errorWrapper.setAttribute("class", "scale-out");
+  }, 3500);
 }
 
 function applyUserInfo(user) {

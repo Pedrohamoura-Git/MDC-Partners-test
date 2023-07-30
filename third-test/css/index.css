@@ -1,5 +1,21 @@
 @import "./base.css";
 
+#error-wrapper {
+  background-color: rgba(255, 0, 0, 0.144);
+  border-radius: var(--border-radius-md);
+  margin-top: 1.5rem;
+  padding: 1rem;
+  position: absolute;
+  width: var(--main-wrapper);
+  top: 5px;
+  transform-origin: 100% 50%;
+  transform: scale(0);
+}
+
+#error-msg {
+  font-size: var(--font-size-md);
+}
+
 #search-form {
   background-color: var(--bg-color-secondary);
   border-radius: var(--border-radius-md);
