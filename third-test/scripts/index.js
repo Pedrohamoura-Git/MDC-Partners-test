@@ -25,6 +25,7 @@ async function fetchUser(usernameValue) {
 function applyUserInfo(user) {
   updateProfileSection(user);
   updateBioSection(user);
+  updateActivitySection(user);
 }
 
 function updateProfileSection(data) {
@@ -48,6 +49,17 @@ function updateBioSection(data) {
   const bioInfo = document.querySelector("#bio-info");
 
   bioInfo.innerHTML = bio;
+}
+
+function updateActivitySection(data) {
+  const { public_repos, followers, following } = data;
+  const reposQuant = document.querySelector("#repos-quant");
+  const followersQuant = document.querySelector("#followers-quant");
+  const followingQuant = document.querySelector("#following-quant");
+
+  reposQuant.innerHTML = public_repos;
+  followersQuant.innerHTML = followers;
+  followingQuant.innerHTML = following;
 }
 
 function getFormattedDate(date) {
