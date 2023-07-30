@@ -16,7 +16,12 @@ async function fetchUser(usernameValue) {
   try {
     const resp = await fetch(`https://api.github.com/users/${usernameValue}`);
     const parsedResp = await resp.json();
-    console.log("parsedResp: ", parsedResp);
+
+    if (!resp.ok) {
+      console.error(resp);
+    }
+
+    applyUserInfo(parsedResp);
   } catch (err) {
     console.error(err);
   }
