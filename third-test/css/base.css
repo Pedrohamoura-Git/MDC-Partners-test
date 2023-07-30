@@ -2,7 +2,7 @@
 @import "./variables.css";
 
 * {
-  transition: all 0.2s ease-in-out;
+  transition: all 0.5s ease-in-out;
   font-family: "Space Mono", monospace;
   box-sizing: border-box;
   text-decoration: none;
@@ -27,8 +27,8 @@ main {
   justify-content: center;
   flex-direction: column;
   margin: 0 auto;
-  margin-top: 5rem;
-  width: clamp(400px, 90%, 700px);
+  margin-top: 8rem;
+  width: var(--main-wrapper);
 }
 
 h1 {
