@@ -1,0 +1,37 @@
+@import "../../global/css/index.css";
+@import "./variables.css";
+
+* {
+  transition: all 0.5s ease-in-out;
+  font-family: "Urbanist", Helvetica, sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: var(--txt-color-primary);
+}
+
+body {
+  background: linear-gradient(
+    21deg,
+    var(--bg-color-primary-initial),
+    var(--bg-color-primary-final)
+  );
+  display: flex;
+  justify-content: center;
+  margin: 8vh 0;
+}
+
+main {
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  position: relative;
+  width: var(--main-wrapper);
+}

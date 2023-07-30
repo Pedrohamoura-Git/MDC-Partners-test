@@ -1,0 +1,7 @@
+:root {
+  --bg-color-primary-initial: hsl(178, 37%, 46%);
+  --bg-color-primary-final: hsl(276, 49%, 34%);
+  --bg-color-secondary: hsla(0, 0%, 100%, 0.7);
+  --txt-color-primary: hsl(0, 0%, 100%);
+  --main-wrapper: clamp(210px, 90%, 800px);
+}
