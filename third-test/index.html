@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/index.css" />
     <script defer src="./scripts/index.js"></script>
   </head>
+
   <body>
     <main>
       <div class="wrapper">
@@ -15,103 +16,112 @@
           <h1>devfinder</h1>
         </header>
 
-        <form class="search-form">
+        <form id="search-form">
           <img
             src="./assets/images/icon-search.svg"
             alt="search icon"
-            class="search-icon"
+            id="search-icon"
           />
           <input
             type="text"
-            class="search-input"
+            id="search-input"
+            id="username-input"
             placeholder="Search GitHub username..."
           />
-          <button class="search-btn">search</button>
+          <button id="search-btn">search</button>
         </form>
 
-        <section class="content">
-          <article class="profile-wrapper">
+          <article id="profile-wrapper">
             <img
               src="./assets/images/image-user-placeholder.png"
               alt="user image"
-              class="user-img"
+              id="internal-user-img"
             />
-            <div class="profile">
+            <div id="profile">
               <div>
-                <h2 class="fullname">Jon Doe</h2>
-                <h3 class="username">@jondoe123</h3>
+                <h2 id="fullname">Jon Doe</h2>
+                <a href="#" target="_blank" id="username" class="contact-link"
+                  >@jondoe123</a
+                >
               </div>
-              <h4 class="creation-date-wrapper">
+              <h4 id="creation-date-wrapper">
                 <span>joined</span>
-                <time class="creation-date">XX/XX/XXXX</time>
+                <time id="creation-date">XX/XX/XXXX</time>
               </h4>
             </div>
           </article>
 
-          <article class="bio-wrapper">
-            <ul class="bio-list">
-              <li class="bio-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+          <article id="bio-wrapper">
+            <ul id="bio-list">
+              <p id="bio-info">
+                Lorem ipsum dolor sit amet consectetur adipisicing ept. Ex
                 assumenda accusamus maxime ipsa molestias. Corrupti iure tempore
                 nam ad, reiciendis earum recusandae quia adipisci? Qui.
-              </li>
+              </p>
             </ul>
           </article>
 
-          <article class="activity-wrapper">
-            <div class="repos">
+          <article id="activity-wrapper">
+            <div id="repos">
               <h4>Repos</h4>
-              <p class="repos-quant">X</p>
+              <p id="repos-quant">X</p>
             </div>
-            <div class="followers-wrapper">
+            <div id="followers-wrapper">
               <h4>followers</h4>
-              <p class="followers-quant">X</p>
+              <p id="followers-quant">X</p>
             </div>
-            <div class="following-wrapper">
+            <div id="following-wrapper">
               <h4>following</h4>
-              <p class="following-quant">X</p>
+              <p id="following-quant">X</p>
             </div>
           </article>
 
-          <article class="contact-wrapper">
-            <ul class="contact-list">
-              <li class="location">
+          <article id="contact-wrapper">
+            <ul id="contact-list">
+              <li id="location">
                 <img
                   src="./assets/images/icon-location.svg"
                   alt="location icon"
-                  class="location-icon"
+                  id="location-icon"
                 />
-                <span class="location-name disabled">not available</span>
+                <span id="location-name" class="disabled">not available</span>
               </li>
-              <li class="twitter">
+              <li id="twitter">
                 <img
                   src="./assets/images/icon-twitter.svg"
                   alt="twitter icon"
-                  class="twitter-icon"
+                  id="twitter-icon"
                 />
-                <a href="#" target="_blank" class="contact-link disabled"
+                <a
+                  href="#"
+                  target="_blank"
+                  id="twitter-link"
+                  class="contact-link disabled"
                   >not available</a
                 >
               </li>
-              <li class="personal-site">
+              <li id="personal-site-wrapper">
                 <img
                   src="./assets/images/icon-website.svg"
                   alt="website icon"
-                  class="personal-site-icon"
+                  id="personal-site-icon"
                 />
-                <a href="#" target="_blank" class="contact-link disabled"
-                  >not available</a
+                <a
+                  href="#"
+                  target="_blank"
+                  id="personal-site"
+                  class="contact-link disabled"
                 >
+                  not available
+                </a>
               </li>
-              <li class="companies">
+              <li id="companies">
                 <img
                   src="./assets/images/icon-company.svg"
                   alt="company icon"
-                  class="companies-icon"
+                  id="company-icon"
                 />
-                <a href="#" target="_blank" class="contact-link disabled"
-                  >not available</a
-                >
+                <span id="company" class="disabled">not available</span>
               </li>
             </ul>
           </article>
