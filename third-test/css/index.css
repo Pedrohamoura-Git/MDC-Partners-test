@@ -61,7 +61,13 @@
   align-items: center;
 }
 
-.user-img {
+#external-user-img {
+  display: none;
+}
+
+#external-user-img,
+#internal-user-img {
+  border-radius: var(--border-radius-full);
   width: 70px;
   height: 70px;
   margin-right: 1.5rem;
@@ -144,7 +150,8 @@
     height: 100%;
   }
 
-  .user-img {
+  #external-user-img,
+  #internal-user-img {
     height: 120px;
     width: 120px;
     margin-bottom: 0.5rem;
@@ -163,7 +170,13 @@
 }
 
 @media (min-width: 770px) {
-  .content {
+  #external-user-img {
+    display: block;
+  }
+
+  #internal-user-img {
+    display: none;
+  }
   #content {
     display: grid;
     grid-template-columns: 1fr 3fr;
