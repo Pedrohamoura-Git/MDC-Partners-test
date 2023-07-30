@@ -60,4 +60,24 @@
   margin-left: 29px;
 }
 
+@media (min-width: 620px) {
+  #form-inputs {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+  }
+
+  #email-label {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  #message-label {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+  }
+
+  #message-label > img {
+    display: none;
+  }
 }
