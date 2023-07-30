@@ -8,8 +8,22 @@ function addEventListenerToSearchBtn() {
   searchBtn.addEventListener("click", async (e) => {
     e.preventDefault();
 
+    if (!isUsernameValid(usernameInput.value)) {
+      showErrorMessage();
+    } else {
       await fetchUser(usernameInput.value);
+    }
   });
+}
+
+function isUsernameValid(username) {
+  if (!username.length) return false;
+  return !hasWhiteSpace(username);
+}
+
+function hasWhiteSpace(username) {
+  // looking for spaces, tabs and line breakers
+  return /\s/.test(username);
 }
 
 async function fetchUser(usernameValue) {
