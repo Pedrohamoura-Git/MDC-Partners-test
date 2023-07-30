@@ -18,8 +18,8 @@
   color: var(--txt-color-primary);
   font-size: 14px;
   font-weight: 600;
-  margin: 10px auto;
-  width: 60%;
+  margin: 10px;
+  width: clamp(80px, 60%, 210px);
 }
 
 .btn-add:hover {
