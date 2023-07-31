@@ -9,8 +9,7 @@
   --bg-color-warning: hsl(0, 61%, 59%);
   --txt-color-primary: hsl(0, 0%, 100%);
   --box-shadow: 0 0 20px hsla(0, 0%, 0%, 0.15);
-  --transition-time-quick: 0.3s;
-
+  --transition-time-quick: 0.5s;
 
   --font-size-lg: 25px;
   --main-wrapper: clamp(210px, 90%, 800px);
