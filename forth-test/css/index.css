@@ -20,7 +20,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 3px 0;
   margin: 8px 3px;
 }
 
@@ -65,6 +64,19 @@
 
 .outline-success {
   outline: 1px solid var(--bg-color-success);
+}
+
+.required-symbol {
+  color: var(--bg-color-warning);
+  position: absolute;
+  top: 0;
+  left: 0px;
+}
+
+.input-wrapper {
+  padding: 5px;
+  position: relative;
+  width: 100%;
 }
 
 @media (min-width: 620px) {

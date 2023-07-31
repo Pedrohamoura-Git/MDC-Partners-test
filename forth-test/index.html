@@ -21,13 +21,16 @@
               src="./assets/images/person-2-svgrepo-com.svg"
             />
 
-            <input
-              class="input"
-              type="text"
-              id="name-input"
-              placeholder="name"
-              images
-            />
+            <div class="input-wrapper">
+              <span class="required-symbol">*</span>
+              <input
+                class="input"
+                type="text"
+                id="name-input"
+                placeholder="name"
+                images
+              />
+            </div>
           </label>
 
           <label id="email-label" for="email-input" class="form-label">
@@ -36,12 +39,15 @@
               src="./assets/images/email-svgrepo-com.svg"
             />
 
-            <input
-              class="input"
-              type="email"
-              id="email-input"
-              placeholder="email"
-            />
+            <div class="input-wrapper">
+              <span class="required-symbol">*</span>
+              <input
+                class="input"
+                type="email"
+                id="email-input"
+                placeholder="email"
+              />
+            </div>
           </label>
 
           <label id="message-label" for="message-input" class="form-label">
@@ -49,12 +55,15 @@
               class="label-icon"
               src="./assets/images/message-square-dots-svgrepo-com.svg"
             />
-            <textarea
-              id="message-input"
-              name="message"
-              placeholder="type your message"
-              class="input"
-            ></textarea>
+            <div class="input-wrapper">
+              <span class="required-symbol">*</span>
+              <textarea
+                id="message-input"
+                name="message"
+                placeholder="type your message"
+                class="input"
+              ></textarea>
+            </div>
           </label>
         </div>
 
