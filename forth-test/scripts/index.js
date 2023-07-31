@@ -1,13 +1,16 @@
 function validateForm(e) {
   e.preventDefault();
 
+  let hasErrors = false;
   const nameInput = document.querySelector("#name-input");
   const emailInput = document.querySelector("#email-input");
   const messageInput = document.querySelector("#message-input");
 
   if (!isTheNameValid(nameInput.value)) {
     notifyError(nameInput);
+    hasErrors = true;
     return false;
+
   }
 }
 
