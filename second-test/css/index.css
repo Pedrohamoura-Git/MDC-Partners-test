@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   column-gap: 2.1rem;
-  width: clamp(200px, 90%, 1280px);
+  width: clamp(210px, 90%, 1280px);
 }
 
 #first-card {
