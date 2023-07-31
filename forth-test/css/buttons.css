@@ -22,7 +22,7 @@
   width: clamp(80px, 60%, 210px);
 }
 
-#add--btn:hover {
+#add-btn:hover {
   background-color: var(--bg-color-primary-accent-hover);
 }
 
