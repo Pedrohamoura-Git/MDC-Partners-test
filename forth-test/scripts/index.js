@@ -43,8 +43,7 @@ function isTheEmailValid(email) {
    *  Check if the email is valid based on some parameters.
    *  See 'email-validation' document for more details.
    */
-  const validRegex =
-    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+  const validRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   return validRegex.test(email);
 }
