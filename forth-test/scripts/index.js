@@ -38,21 +38,17 @@ function isTheEmailValid(email) {
   return validRegex.test(email);
 }
 
-function isTheMessageValid(text) {
-  return text.length;
-}
-
 function notifyError(el) {
-  addInputErrorOutline(el);
-  // showErrorMessage(el, "Please enter a valid name");
+  toggleInputOutlineClass(el, "outline-error");
+  // showMessage(el, "Please enter a valid name");
 }
 
-function addInputErrorOutline(el) {
-  el.classList.add("outline-error");
+function toggleInputOutlineClass(el, className) {
+  el.classList.add(className);
 
   setTimeout(() => {
-    el.classList.remove("outline-error");
-  }, 3000);
+    el.classList.remove(className);
+  }, 2100);
 }
 
 function showErrorMessage(el, message) {}
