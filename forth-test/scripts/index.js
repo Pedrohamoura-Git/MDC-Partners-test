@@ -21,6 +21,11 @@ function validateForm(e) {
     hasErrors = true;
   }
 
+  if (hasErrors) return false;
+
+  toggleInputOutlineClass(nameInput, "outline-success");
+  toggleInputOutlineClass(emailInput, "outline-success");
+  toggleInputOutlineClass(messageInput, "outline-success");
 }
 
 function isTextEmpty(text) {

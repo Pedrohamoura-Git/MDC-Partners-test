@@ -63,6 +63,10 @@
   outline: 1px solid var(--bg-color-warning);
 }
 
+.outline-success {
+  outline: 1px solid var(--bg-color-success);
+}
+
 @media (min-width: 620px) {
   #form-inputs {
     display: grid;
