@@ -6,7 +6,7 @@ function validateForm(e) {
   const emailInput = document.querySelector("#email-input");
   const messageInput = document.querySelector("#message-input");
 
-  if (!isTheNameValid(nameInput.value)) {
+  if (!isTextEmpty(nameInput.value)) {
     notifyError(nameInput);
     hasErrors = true;
   }
@@ -16,11 +16,15 @@ function validateForm(e) {
     hasErrors = true;
   }
 
+  if (!isTextEmpty(messageInput.value)) {
+    notifyError(messageInput);
+    hasErrors = true;
   }
+
 }
 
-function isTheNameValid(name) {
-  return name.length;
+function isTextEmpty(text) {
+  return text.length;
 }
 
 function isTheEmailValid(email) {
@@ -34,6 +38,9 @@ function isTheEmailValid(email) {
   return validRegex.test(email);
 }
 
+function isTheMessageValid(text) {
+  return text.length;
+}
 
 function notifyError(el) {
   addInputErrorOutline(el);
