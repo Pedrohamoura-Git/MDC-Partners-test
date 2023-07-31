@@ -35,17 +35,18 @@ function hasWhiteSpace(username) {
 
 async function fetchUser(usernameValue) {
   try {
-    const resp = await fetch(`https://api.github.com/users/${usernameValue}`);
-    const parsedResp = await resp.json();
+    const response = await fetch(
+      `https://api.github.com/users/${usernameValue}`
+    );
+    const result = await response.json();
 
-    if (!resp.ok) {
-      console.error(resp);
-      return showErrorMessage();
+    if (!response.ok) {
+      throw new Error(response);
     }
 
-    applyUserInfo(parsedResp);
-  } catch (err) {
-    console.error(err);
+    applyUserInfo(result);
+  } catch (error) {
+    console.error(error);
     return showErrorMessage();
   }
 }
