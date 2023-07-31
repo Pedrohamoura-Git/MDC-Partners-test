@@ -12,8 +12,7 @@ function validateForm(e) {
 }
 
 function isTheNameValid(name) {
-  console.log("name: ", name);
-  if (!name) return false;
+  return name.length;
 }
 
 function notifyError(el) {
