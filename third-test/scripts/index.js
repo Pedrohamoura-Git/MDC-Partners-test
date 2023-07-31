@@ -24,13 +24,7 @@ function addEventListenerToSearchBtn() {
 }
 
 function isUsernameValid(username) {
-  if (!username.length) return false;
-  return !hasWhiteSpace(username);
-}
-
-function hasWhiteSpace(username) {
-  // looking for spaces, tabs and line breakers
-  return /\s/.test(username);
+  return /^[\S]+$/.test(username);
 }
 
 async function fetchUser(usernameValue) {
