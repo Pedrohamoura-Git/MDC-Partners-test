@@ -6,6 +6,7 @@
   --bg-color-primary-accent-hover: hsl(158, 100%, 42%);
   --bg-color-secondary-accent: hsla(0, 0%, 100%, 0.7);
   --bg-color-secondary-accent-hover: hsla(0, 0%, 100%, 1);
+  --bg-color-secondary-accent-hover-fully-transparent: hsla(0, 0%, 100%, 0.12);
   --bg-color-warning: hsl(0, 61%, 59%);
   --bg-color-warning-transparent: hsla(0, 61%, 59%, 0.7);
   --bg-color-success: hsl(152, 100%, 50%);
@@ -17,5 +18,6 @@
   --font-size-sm: 13px;
 
   --border-radius-sm: 5px;
+
   --main-wrapper: clamp(210px, 90%, 800px);
 }
