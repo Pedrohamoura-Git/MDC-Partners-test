@@ -7,11 +7,13 @@
   --bg-color-secondary-accent: hsla(0, 0%, 100%, 0.7);
   --bg-color-secondary-accent-hover: hsla(0, 0%, 100%, 1);
   --bg-color-warning: hsl(0, 61%, 59%);
+  --bg-color-warning-transparent: hsla(0, 61%, 59%, 0.7);
   --bg-color-success: hsl(152, 100%, 50%);
   --txt-color-primary: hsl(0, 0%, 100%);
   --box-shadow: 0 0 20px hsla(0, 0%, 0%, 0.15);
   --transition-time-quick: 0.5s;
 
   --font-size-lg: 25px;
+  --font-size-sm: 13px;
   --main-wrapper: clamp(210px, 90%, 800px);
 }
