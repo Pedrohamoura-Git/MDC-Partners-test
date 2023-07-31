@@ -1,9 +1,3 @@
-const clearBtn = document.querySelector("#clear-btn");
-
-clearBtn.addEventListener("click", () => {
-  resetForm();
-});
-
 function validateForm(e) {
   e.preventDefault();
 
@@ -58,9 +52,4 @@ function toggleInputOutlineClass(el, className) {
   setTimeout(() => {
     el.classList.remove(className);
   }, 2100);
-}
-
-function resetForm() {
-  const form = document.querySelector("#form");
-  form.reset();
 }
