@@ -1,0 +1,15 @@
+The personal information part can contain the following ASCII characters:
+
+Uppercase and lowercase letters (A-Z and a-z)
+Numeric characters (0-9)
+Special characters - ! # $ % & ' * + - / = ? ^ _ ` { | } ~
+
+Period, dot, or full stop (.) with the condition that it cannot be the first or last letter of the email and cannot repeat one after another.
+The domain name contains:
+
+Letters
+Digits
+Hyphens
+Dots
+
+source: https://www.simplilearn.com/tutorials/javascript-tutorial/email-validation-in-javascript
