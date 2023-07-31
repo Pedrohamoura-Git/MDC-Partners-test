@@ -2,7 +2,7 @@
 @import "./variables.css";
 
 * {
-  transition: all 0.5s ease-in-out;
+  transition: all var(--transition-time-quick) ease-in-out;
   font-family: "Urbanist", Helvetica, sans-serif;
   box-sizing: border-box;
   text-decoration: none;
@@ -39,3 +39,15 @@ main {
 h1 {
   font-size: var(--font-size-lg);
 }
+
+/* h2 {
+  font-size: var(--font-size-md);
+}
+
+h3 {
+  font-size: var(--font-size-sm);
+}
+
+h4 {
+  font-size: var(--font-size-xsm);
+}  */
