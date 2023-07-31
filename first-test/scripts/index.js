@@ -5,11 +5,11 @@ function handleFormSubmission(event) {
 
 /**
 function toggleText() {
-  const textElement = document.getElementById("text");
-  const defaultText = "This is the <strong>default</strong> text"
-  const newText = "This is the <strong>new</strong> text"
+  const strongElement = document.querySelector("#text strong");
+  const defaultText = "default";
+  const newText = "new";
 
-  if (textElement.innerHTML === defaultText) {
-    textElement.innerHTML = newText;
-  } else textElement.innerHTML = defaultText;
+  if (strongElement.innerHTML === defaultText) {
+    strongElement.innerHTML = newText;
+  } else strongElement.innerHTML = defaultText;
 }
