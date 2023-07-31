@@ -9,7 +9,12 @@ function validateForm(e) {
   if (!isTheNameValid(nameInput.value)) {
     notifyError(nameInput);
     hasErrors = true;
-    return false;
+  }
+
+  if (!isTheEmailValid(emailInput.value)) {
+    notifyError(emailInput);
+    hasErrors = true;
+  }
 
   }
 }
@@ -17,6 +22,18 @@ function validateForm(e) {
 function isTheNameValid(name) {
   return name.length;
 }
+
+function isTheEmailValid(email) {
+  /**
+   *  Check if the email is valid based on some parameters.
+   *  See 'email-validation' document for more details.
+   */
+  const validRegex =
+    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+  return validRegex.test(email);
+}
+
 
 function notifyError(el) {
   addInputErrorOutline(el);
