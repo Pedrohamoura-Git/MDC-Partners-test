@@ -96,13 +96,13 @@ function updateBioSection(data) {
 
 function updateActivitySection(data) {
   const { public_repos, followers, following } = data;
-  const reposQuant = document.querySelector("#repos-quant");
-  const followersQuant = document.querySelector("#followers-quant");
-  const followingQuant = document.querySelector("#following-quant");
+  const reposQuantityElement = document.querySelector("#repos-quantity");
+  const followersQuantityElement = document.querySelector("#followers-quantity");
+  const followingQuantityElement = document.querySelector("#following-quantity");
 
-  reposQuant.innerHTML = public_repos;
-  followersQuant.innerHTML = followers;
-  followingQuant.innerHTML = following;
+  reposQuantityElement.innerHTML = public_repos;
+  followersQuantityElement.innerHTML = followers;
+  followingQuantityElement.innerHTML = following;
 }
 
 function updateContactSection(data) {
