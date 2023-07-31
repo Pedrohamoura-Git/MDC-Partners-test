@@ -11,7 +11,7 @@
 }
 
 .title {
-  color: #fff;
+  color: var(--bg-color-secondary-accent);
   margin: 21px 0;
   text-align: center;
 }
@@ -30,10 +30,10 @@
 }
 
 .input {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: var(--bg-color-secondary-highly-transparent);
   border: none;
   border-radius: var(--border-radius-sm);
-  color: #fff;
+  color: var(--bg-color-secondary-accent);
   font-size: 1rem;
   padding: 10px;
   width: 100%;
@@ -96,7 +96,7 @@
 }
 
 #global-message {
-  background-color: var(--bg-color-secondary-accent-hover-fully-transparent);
+  background-color: var(--bg-color-secondary-highly-transparent);
   border-radius: var(--border-radius-sm);
   box-shadow: var(--box-shadow);
   height: 0;
