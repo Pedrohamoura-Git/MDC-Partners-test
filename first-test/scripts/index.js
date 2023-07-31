@@ -1,7 +1,3 @@
-const formElement = document.getElementById("form");
-
-formElement.addEventListener("submit", (event) => handleFormSubmission(event));
-
 function handleFormSubmission(event) {
   event.preventDefault();
   toggleText();
