@@ -60,6 +60,10 @@
   margin-left: 29px;
 }
 
+.outline-error {
+  outline: 1px solid var(--bg-color-warning);
+}
+
 @media (min-width: 620px) {
   #form-inputs {
     display: grid;

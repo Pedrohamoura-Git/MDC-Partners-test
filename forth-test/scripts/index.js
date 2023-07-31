@@ -6,7 +6,7 @@ function validateForm(e) {
   const messageInput = document.querySelector("#message-input");
 
   if (!isTheNameValid(nameInput.value)) {
-    // showErrorMessage('Please enter a valid name');
+    notifyError(nameInput);
     return false;
   }
 }
@@ -15,3 +15,14 @@ function isTheNameValid(name) {
   console.log("name: ", name);
   if (!name) return false;
 }
+
+function notifyError(el) {
+  addInputErrorOutline(el);
+  // showErrorMessage(el, "Please enter a valid name");
+}
+
+function addInputErrorOutline(el) {
+  el.classList.add("outline-error");
+}
+
+function showErrorMessage(el, message) {}
