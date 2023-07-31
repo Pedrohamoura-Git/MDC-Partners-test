@@ -13,7 +13,7 @@
   transition: var(--transition-time-quick);
 }
 
-.btn-add {
+#add-btn {
   background-color: var(--bg-color-primary-accent);
   color: var(--txt-color-primary);
   font-size: 14px;
@@ -22,11 +22,11 @@
   width: clamp(80px, 60%, 210px);
 }
 
-.btn-add:hover {
+#add--btn:hover {
   background-color: var(--bg-color-primary-accent-hover);
 }
 
-.btn-clear {
+#clear-btn {
   background-color: var(--bg-color-secondary-accent);
   color: black;
   font-weight: 600;
@@ -34,6 +34,6 @@
   padding: 5px 15px;
 }
 
-.btn-clear:hover {
+#clear-btn:hover {
   background-color: var(--bg-color-secondary-accent-hover);
 }
