@@ -50,7 +50,6 @@ function isTheEmailValid(email) {
 
 function notifyError(el) {
   toggleInputOutlineClass(el, "outline-error");
-  // showMessage(el, "Please enter a valid name");
 }
 
 function toggleInputOutlineClass(el, className) {
@@ -60,8 +59,6 @@ function toggleInputOutlineClass(el, className) {
     el.classList.remove(className);
   }, 2100);
 }
-
-function showMessage(el, message) {}
 
 function resetForm() {
   const form = document.querySelector("#form");
