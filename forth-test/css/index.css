@@ -95,6 +95,24 @@
   padding: 10px;
 }
 
+#global-message {
+  background-color: var(--bg-color-secondary-accent-hover-fully-transparent);
+  border-radius: var(--border-radius-sm);
+  box-shadow: var(--box-shadow);
+  height: 0;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 0;
+}
+
+.global-message-active {
+  height: 35px !important;
+  padding: 10px;
+  width: 200px !important;
+  overflow: hidden;
+}
+
 @media (min-width: 620px) {
   #form-inputs {
     display: grid;
