@@ -138,6 +138,6 @@ function getFormattedDate(date) {
   });
 }
 
-function removeElementDisabledClass(el) {
-  el.classList.remove("disabled");
+function removeElementDisabledClass(element) {
+  element.classList.remove("disabled");
 }
