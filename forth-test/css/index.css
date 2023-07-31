@@ -67,7 +67,7 @@
   color: var(--bg-color-warning);
   position: absolute;
   top: 0;
-  left: 0px;
+  left: -3px;
 }
 
 .input-wrapper {
