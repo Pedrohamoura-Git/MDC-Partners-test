@@ -23,6 +23,10 @@ function notifyError(el) {
 
 function addInputErrorOutline(el) {
   el.classList.add("outline-error");
+
+  setTimeout(() => {
+    el.classList.remove("outline-error");
+  }, 3000);
 }
 
 function showErrorMessage(el, message) {}
