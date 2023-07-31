@@ -7,18 +7,17 @@ function validateForm(e) {
   const messageInput = document.querySelector("#message-input");
 
   if (!isTextEmpty(nameInput.value)) {
-    notifyError(nameInput, 'Please enter a valid name');
+    notifyError(nameInput, "Please enter a valid name");
     hasErrors = true;
   }
 
   if (!isTheEmailValid(emailInput.value)) {
-    notifyError(emailInput, 'Please enter a valid email address');
+    notifyError(emailInput, "Please enter a valid email address");
     hasErrors = true;
   }
 
   if (!isTextEmpty(messageInput.value)) {
-    notifyError(messageInput);
-    notifyError(nameInput, 'Please enter a valid name');
+    notifyError(messageInput, "Please enter a valid name");
     hasErrors = true;
   }
 
@@ -48,7 +47,7 @@ function notifyError(
   element,
   message = "Invalid. Please, check field and try again"
 ) {
-  showErrorMessage(element, message);
+  showInputErrorMessage(element, message);
   toggleInputOutlineClass(element, "outline-error");
 }
 
@@ -60,8 +59,14 @@ function toggleInputOutlineClass(el, className) {
   }, 2100);
 }
 
-function showErrorMessage(element, message) {
+function showInputErrorMessage(element, message) {
   element.nextSibling.nextSibling.innerText = message;
+  element.nextSibling.nextSibling.classList.add("show-error-message");
+
+  setTimeout(() => {
+    element.nextSibling.nextSibling.classList.remove("show-error-message");
+  }, 3500);
+}
 
 function showGlobalMessage(message, className) {
   const globalMessage = document.querySelector("#global-message");
