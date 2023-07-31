@@ -19,7 +19,7 @@
   font-size: 14px;
   font-weight: 600;
   margin: 10px;
-  width: clamp(80px, 60%, 210px);
+  width: clamp(50px, 30%, 150px);
 }
 
 #add-btn:hover {
