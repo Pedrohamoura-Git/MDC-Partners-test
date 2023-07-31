@@ -3,7 +3,6 @@ function handleFormSubmission(event) {
   toggleText();
 }
 
-/**
 function toggleText() {
   const strongElement = document.querySelector("#text strong");
   const defaultText = "default";
