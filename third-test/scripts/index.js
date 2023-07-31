@@ -107,25 +107,25 @@ function updateActivitySection(data) {
 
 function updateContactSection(data) {
   const { location, twitter_username, blog, company } = data;
-  const locationName = document.querySelector("#location-name");
-  const twitter = document.querySelector("#twitter-link");
-  const personalSite = document.querySelector("#personal-site");
-  const companyName = document.querySelector("#company");
+  const locationElement = document.querySelector("#location-name");
+  const twitterElement = document.querySelector("#twitter-link");
+  const personalSiteElement = document.querySelector("#personal-site");
+  const companyNameElement = document.querySelector("#company");
 
-  locationName.innerHTML = location;
-  removeElementDisabledClass(location);
+  locationElement.innerHTML = location;
+  removeElementDisabledClass(locationElement);
 
-  twitter.href = `https://twitter.com/${twitter_username}`;
-  twitter.innerHTML = `@${twitter_username}`;
-  removeElementDisabledClass(twitter);
+  twitterElement.href = `https://twitter.com/${twitter_username}`;
+  twitterElement.innerHTML = `@${twitter_username}`;
+  removeElementDisabledClass(twitterElement);
 
-  personalSite.href = blog;
-  personalSite.innerHTML = blog;
-  removeElementDisabledClass(personalSite);
+  personalSiteElement.href = blog;
+  personalSiteElement.innerHTML = blog;
+  removeElementDisabledClass(personalSiteElement);
 
-  companyName.href = blog;
-  companyName.innerHTML = company;
-  removeElementDisabledClass(company);
+  companyNameElement.href = blog;
+  companyNameElement.innerHTML = company;
+  removeElementDisabledClass(companyNameElement);
 }
 
 function getFormattedDate(date) {
